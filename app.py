@@ -8,7 +8,7 @@ from dash.dependencies import Input, Output, State
 ########### Define your variables ######
 myheading1='Predicting Mortgage Loan Approval'
 image1='assets/rocauc.html'
-tabtitle = 'Loan Prediction'
+tabtitle = 'Loan Prediction Application'
 sourceurl = 'https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/'
 githublink = 'https://github.com/plotly-dash-apps/503-log-reg-loans-simple'
 

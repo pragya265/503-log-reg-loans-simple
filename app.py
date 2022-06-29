@@ -17,7 +17,7 @@ with open('assets/rocauc.json', 'r') as f:
     fig=json.load(f)
 
 ########### open the pickle file ######
-filename = open('analysis/loan_approval_logistic_model.pkl', 'rb')
+filename = open('analysis/pragya_loan_approval_logistic_model.pkl', 'rb')
 unpickled_model = pickle.load(filename)
 filename.close()
 
@@ -48,9 +48,9 @@ app.layout = html.Div(children=[
                 html.Div('Probability Threshold for Loan Approval'),
                 dcc.Input(id='Threshold', value=50, type='number', min=0, max=100, step=1),
                 html.Div('Gender Male = 0, Female = 1'),
-                dcc.Input(id='Gender', value=50, type='number', min=0, max=1, step=1),
+                dcc.Input(id='Gender', value=0, type='number', min=0, max=1, step=1),
                 html.Div('Dependents(3 refers to 3 or 3)'),
-                dcc.Input(id='Dependents', value=50, type='number', min=0, max=1, step=1),
+                dcc.Input(id='Dependents', value=0, type='number', min=0, max=3, step=1),
             
             ], className='three columns'),
             html.Div([

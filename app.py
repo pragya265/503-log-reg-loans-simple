@@ -49,7 +49,7 @@ app.layout = html.Div(children=[
                 dcc.Input(id='Threshold', value=50, type='number', min=0, max=100, step=1),
                 html.Div('Gender Male = 0, Female = 1'),
                 dcc.Input(id='Gender', value=0, type='number', min=0, max=1, step=1),
-                html.Div('Dependents(3 refers to 3 or 3)'),
+                html.Div('Dependents(3 denotes to 3 or 3+ dependents)'),
                 dcc.Input(id='Dependents', value=0, type='number', min=0, max=3, step=1),
             
             ], className='three columns'),
